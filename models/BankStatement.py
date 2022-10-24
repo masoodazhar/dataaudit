@@ -11,7 +11,7 @@ class BankStatement(bankDB.Model):
     amount = bankDB.Column(bankDB.String(120))
     comment = bankDB.Column(bankDB.Text)
     date = bankDB.Column(bankDB.DateTime)
-    audit_date = bankDB.Column(bankDB.DateTime)
+    auditdate = bankDB.Column(bankDB.DateTime)
 
     @property
     def serialize(self):
@@ -22,5 +22,5 @@ class BankStatement(bankDB.Model):
             'amount': self.amount,
             'comment': self.comment,
             'date': self.date,
-            'audit_date': self.audit_date
+            'auditdate': self.auditdate
         }

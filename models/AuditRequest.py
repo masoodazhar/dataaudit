@@ -12,7 +12,7 @@ class AuditRequest(auditDB.Model):
     comment = auditDB.Column(auditDB.Text)
     request_type = auditDB.Column(auditDB.String(50))
     date = auditDB.Column(auditDB.DateTime)
-    audit_date = auditDB.Column(auditDB.DateTime)
+    auditdate = auditDB.Column(auditDB.DateTime)
 
     @property
     def serialize(self):
@@ -24,5 +24,5 @@ class AuditRequest(auditDB.Model):
             'request_type': self.request_type,
             'comment': self.comment,
             'date': self.date,
-            'audit_date': self.audit_date
+            'auditdate': self.auditdate
         }

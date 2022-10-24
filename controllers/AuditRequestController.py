@@ -6,6 +6,7 @@ from models.AuditRequest import AuditRequest
 from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
+
 def index():
     ...
 

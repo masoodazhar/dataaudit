@@ -6,6 +6,7 @@ from models.BankStatement import BankStatement
 from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
+
 def index():
     ...
 
